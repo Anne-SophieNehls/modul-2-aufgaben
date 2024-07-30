@@ -36,6 +36,11 @@ const susiId = document.getElementById("string1_4")!
 
 susiId.innerHTML = `<p>${susi}</p></br><p>${is}</p></br><p>${isGoingTo}</p> </br><p>${isGoingToSchool}</p> </br><p>${susiIsSchool}</p>`
 
+
+
+
+
+
 // ! String-Methods-TS-Level-1_5 */
 
 const whereIsSusi = 'Susi is back from codingschool'
