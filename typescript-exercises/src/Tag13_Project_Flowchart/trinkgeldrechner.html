@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinkgeldrechner</title>
+    <link rel="stylesheet" href="./trinkgeldrechner.css">
+</head>
+<body>
+    <main>
+        <h1>Trinkgeldrechner</h1>
+        <form action="">
+
+            <label for="betrag">Rechnungsbetrag</label>
+            <div><p>💰</p>
+            <input type="number" id="betrag" name="fname" >
+            </div>
+
+            <label for="Personen">Personenanzahl</label>
+            <div><p>👥</p>
+            <input type="number" id="Personen" name="fname" >
+            </div>
+            <label for="service">Wie war der service</label>
+            <select id="service" size="4">
+                <option>Schlecht</option>
+                <option>Okay</option>
+                <option>Gut</option>
+                <option>Ausgezeichnet</option>
+              </select>
+            <button id="btn_ausrechnen">ausrechnen</button>
+           
+        </form>
+        <p id="trinkgeld"></p>
+        <p id="gesamtbetrag"></p>
+        <p id="teilBetrag"> </p>
+    </main>
+    <script type="module" src="./trinkgeldrechner.ts"></script>
+</body>
+</html>
