@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+<body>
+    <div id="app">
+        <form id="book-form">
+            <input id="title-input" type="text" placeholder="Add a title" required />
+            <input id="author-input" type="text" placeholder="Add author name" required />
+            <select id="genre-select" required>
+                <!-- als Platzelement für das Select was zu Anfang ausgewählt sit -->
+                <option value="" disabled selected>Select genre</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="History">History</option>
+                <option value="Mystery">Mystery</option>
+            </select>
+            <input id="year-input" type="number" placeholder="Add year" required min="0" max="2024" />
+            <input id="pages-input" type="number" placeholder="Add number of pages" required min="1" max="50000" />
+            <div id="error-text" class="error-message"></div>
+            <button type="submit">Add book</button>
+        </form>
+        <ul id="book-list"></ul>
+    </div>
+    <script type="module" src="./buch-project.ts"></script>
+</body>
+</html>
