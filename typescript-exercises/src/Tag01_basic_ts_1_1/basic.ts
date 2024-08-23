@@ -1,3 +1,4 @@
+import IShape from "../contracts/IShape";
 
 console.log('Welcome :)');
 
@@ -31,3 +32,6 @@ let z: number = 10
 let resultOne: number = multivar / z
 
 console.log(resultOne)
+class Rectangle implements IShape {
+    name: string;
+}
