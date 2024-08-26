@@ -26,3 +26,6 @@ console.log(InstanceChecker.isCar(ElectricCar1));
 console.log(InstanceChecker.isElectricCar(Car1));
 console.log(InstanceChecker.isElectricCar(ElectricCar1));
 
+//*___________ OOP-Class-TS-Level-1_11____________
+console.log("OOP-Class-TS-Level-1_11")
+
