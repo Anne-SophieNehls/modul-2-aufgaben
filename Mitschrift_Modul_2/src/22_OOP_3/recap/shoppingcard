@@ -1,0 +1,28 @@
+import ShoppingCardItems from "./shoppingcarditems"
+
+export class ShoppingCard{
+    private  _shoppingCardItems: ShoppingCardItems[] =[];
+    private _totalPrice: number =0;
+    //!hier wird kein constructor mehr gebraucht, da die eigenschaften schon zugewishen sind in der innenliegenden class
+
+    get items(): ShoppingCardItems[] {
+        return this._shoppingCardItems
+    }
+
+    set items(value: ShoppingCardItems[]){
+         this._shoppingCardItems= value
+    }
+
+    addItem(item: ShoppingCardItems): void{
+        this._shoppingCardItems.push(item)
+        this._totalPrice += item.price
+    }
+
+    private calculateTotalPrice(): number{
+        return this._totalPrice
+    }
+}
+
+const shopping1 = new ShoppingCard();
+
+shopping1.items
