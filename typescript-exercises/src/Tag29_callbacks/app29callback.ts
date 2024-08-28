@@ -48,9 +48,29 @@ function randomBoolean():any {
     return boolean;
 }
 
-function randomEmoji(): string {}
+function randomEmoji(): string {
+    const emojiArray: string[] = ["🧇","🥨", "🥦", "🍱", "🍔", "🥟", "🍭", "🍫"]
+    const randomIndex = Math.floor(Math.random() * emojiArray.length);
+    return emojiArray[randomIndex];}
 
-function randomText(): string {}
+function randomText(): string {
+    const textArray: string[] =["Ich muss Raus", "Frag nicht was für Saft. Einfach Orangensaft", "Jetzt mal Butter bei die Fische!", "Nordisch by Nature", "step on Lego!", "Wer wohnt in der Anananas ganz tief im Meer", "Kann es sein, dass du dumm bist oder so?", "du hast Dreck auf der Nase. sieht nicht schön aus. Genau hier!", "moin kleines Schwibbel Schabbel"]
+    const randomIndex = Math.floor(Math.random() * textArray.length);
+    return textArray[randomIndex];}
+
+//- headline
+function updateHeadline(randomiseHOne: () => string): void {
+    const headlineElement = document.getElementById(
+      "headline"
+    ) as HTMLHeadElement;
+    if (headlineElement) {
+      headlineElement.innerText = randomiseHOne();
+    }
+  }  
 
 //- button funktion
-randomBtn.addEventListener("click", () => {})
+randomBtn.addEventListener("click", () => {
+    const functions = [randomNumber, randomText, randomBoolean, randomEmoji];
+    const randomFN = functions[Math.floor(Math.random() * functions.length)];
+    updateHeadline(randomFN);
+  });
