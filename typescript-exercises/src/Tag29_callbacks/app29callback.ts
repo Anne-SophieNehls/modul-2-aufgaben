@@ -33,3 +33,24 @@ console.log(calculateSumAndMore(57, 32, dobble, binary))
 
 // * ___________callback-TS-Level-3_2 ___________
 console.log("%c callback-TS-Level-3_2 ", "background: darkorange; color: white");
+
+//- elemente abholen
+const randomBtn = document.getElementById("randomButton") as HTMLButtonElement;
+const h1 = document.getElementById("headline") as HTMLHeadingElement;
+
+//- einzelne funktionnen
+function randomNumber(): string {
+    const number = Math.floor(Math.random() * 100).toString();
+    return number;}
+
+function randomBoolean():any {
+    const boolean = Math.random() >= 0.5 ? "true" : "false";
+    return boolean;
+}
+
+function randomEmoji(): string {}
+
+function randomText(): string {}
+
+//- button funktion
+randomBtn.addEventListener("click", () => {})
