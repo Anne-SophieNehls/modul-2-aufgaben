@@ -125,6 +125,7 @@ exercise3.catch((err)=>{
       const result = numbers.map(num => num * 2);
       console.log(result)
       return result
+
     }) 
     .then((numbers) => {
         // minus 1
