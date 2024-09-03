@@ -1,0 +1,20 @@
+- Sende den Request ab und schau dir die Antwort an
+    - Wie lange hat der Aufruf gedauert? - keine sekunde, vielleicht 459 ms, das wurde mir in einer ecke angezeigt
+
+    - Wieviele Planeten bekommst du als Antwort? - 60 Planeten
+    - Wie lautet der Name des vorletzten Planeten? - Coruscant (page1), Kalee (page6)
+    - Wie ist das Klima (climate) des Planten Hoth? - frozen
+- Versuche selbst, die 3. Seite (page=3) aufzurufen.
+    - Wie lautet der Name des zweiten Planeten auf dieser Seite? - Corellia
+
+peaple
+    - Wer ist die erste Person in der Antwort? - Luke Skywalker
+- Rufe sein Raumschiff ab - wie heißt es? - T-65 X-wing, Imperial shuttle
+- Wie lautet die Haarfarbe und die Augenfarbe der letzten Person aus der Antwort? (page1) hair_color": "auburn, white", eye_color": "blue-gray"
+- Rufe die Seite 3 ab.
+    - Wer steht dort ganz oben? - Boba Fett
+    - In welchen Filmen kommt die Person vor? The Empire Strikes Back, Return of the Jedi, Attack of the Clones
+- Suche nach Prinzessin Leia. (https://swapi.dev/api/people/?search=leia)
+Wie man einen Suchtext im Request mitgeben kann, findest du in der [Dokumentation](https://swapi.dev/documentation)
+    - Wie groß ist sie? - height": "150",
+    - Was ist ihr Heimatplanet? -   "Alderaan", 
