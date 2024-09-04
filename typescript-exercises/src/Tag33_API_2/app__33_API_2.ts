@@ -64,8 +64,20 @@ function createTodoOutput (toDos: IToDo[]):string{
             </ul>`; 
         }
     })
-    return resultTodo.join("")
-}
+
+
+//-serch
+
+// Suchfunktion beim Eingeben in das Eingabefeld
+searchInputToDos.addEventListener('input', (event) => {
+    const searchTerm = (event.target as HTMLInputElement).value.toLowerCase();
+    const filteredTodos = IToDo.todos.filter(todo => todo.title.toLowerCase().includes(searchTerm));
+  
+    // Aufgabenliste aktualisieren
+    todoList.innerHTML = '';
+    createTodoOutput(filteredTodos)
+    });
+  }
 
 
 //= fetch-level-3_1
