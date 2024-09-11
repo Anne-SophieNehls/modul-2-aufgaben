@@ -42,7 +42,7 @@ const POKEMON_TYPES = [
 
 async function showAllPokemon() {
     try {
-        if(main.innerHTML ! == ""){
+        if(main.innerHTML !== ""){
                 return;
         }       
         const response = await fetch(BASE_URL)
