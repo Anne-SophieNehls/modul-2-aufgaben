@@ -20,7 +20,6 @@ btnToDos?.addEventListener("click", (event: Event)=>{
     fetchAndDisplay(ToDo_URL)})
 
 //fetch function
-
 function fetchAndDisplay(url: string,){
     fetch(url)
     .then((resp: Response) => {
